@@ -1,5 +1,10 @@
 @media (min-width: 300px) {
 
+    a:-webkit-any-link {
+        color: none;
+        cursor: pointer;
+    }
+
     .o{
         position:fixed;
         top:0;
@@ -48,7 +53,7 @@
     }
 
     .o7 {
-        z-index: 999;
+        z-index: 9;
         display: flex;
         flex-direction: column;
     }
@@ -58,7 +63,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 9
+        z-index: 9;
     }
 
     .ModalInitial {
@@ -88,6 +93,10 @@
         text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
     }
 
+
+    #Star0 {
+        transform: translate(450%, -30%);
+    }
 
     #Star1 {
         transform: translate(540%, -400%);
@@ -122,7 +131,7 @@
     }
 
     #Star5 {
-        transform: translate(90%, 520%)
+        transform: translate(56%, 520%)
     }
 
     .ModalOverlay1, .ModalOverlay2,.ModalOverlay3,
@@ -139,9 +148,33 @@
 
         width: 90%;
         height: 90%;
-        background-color: #F0F2f5;
         border-radius: 10px;
         z-index: 10;
+    }
+
+    .ModalOverlay1 {
+        background: rgb(53,66,76);
+        background: linear-gradient(108deg, rgba(53,66,76,1) 6%, rgba(74,89,105,1) 23%, rgba(66,121,115,1) 45%, rgba(93,131,138,1) 65%, rgba(115,190,176,1) 93%);
+    }
+
+    .ModalOverlay2 {
+        background: rgb(71,53,53);
+        background: linear-gradient(310deg, rgba(71,53,53,1) 12%, rgba(123,53,51,1) 38%, rgba(187,43,37,1) 84%);
+    }
+
+    .ModalOverlay3 {
+        background: rgb(39,33,35);
+        background: linear-gradient(310deg, rgba(39,33,35,1) 12%, rgba(79,62,58,1) 38%, rgba(135,100,74,1) 84%);
+    }
+
+    .ModalOverlay4 {
+        background: rgb(61,47,44);
+        background: linear-gradient(310deg, rgba(61,47,44,1) 12%, rgba(107,25,27,1) 38%, rgba(194,68,65,1) 84%);
+    }
+
+    .ModalOverlay5 {
+        background: rgb(40,25,54);
+        background: linear-gradient(90deg, rgba(40,25,54,1) 12%, rgba(68,47,93,1) 38%, rgba(102,82,123,1) 84%);
     }
     
     .ModalOverlay1.active, .ModalOverlay2.active, .ModalOverlay3.active,
@@ -155,15 +188,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
         border-radius: 10px;
         width: 95%;
+        background-color: #F0F2f5;
         min-height: 45%;
     }
 
+    .Title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: rgb(226, 216, 216);
+    }
+
     .Text {
-        font-size: 1.05rem;
+        font-family: 'Lato', sans-serif;
         width: 90%;
+        font-size: 0.98rem;
     }
 
     .VisualIMGXiao {

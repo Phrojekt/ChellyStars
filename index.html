@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     
 </head>
 <body>
-
-    <audio controls src="./midia/AlabasterDayDreams.mp3" class="o" id="player" loop></audio>
 
     <div class="o o1"></div>
     <div class="o o2"></div>
@@ -30,11 +30,22 @@
     </div>
 
     <div class="o o7"> 
-        <a href="#" class="Happy"><h1 onclick="Music.play()">Happy Birthday!!!</h1></a>
-        <h2 class="User">@Chelly_Mei</h3>
+        <a href="#" class="Happy"><h1>Happy Birthday!!!</h1></a>
+        <h2 class="User">@Chelly_Mei</h2>
     </div>
 
     <div class="o o6 container-center">
+
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+
+        <input type="image" src="./img/Star1.png" value="PLAY" onclick="play()" id="Star0">
+        <audio id="audio" src="./midia/AlabasterDayDreams.mp3"></audio>
+
         <a href="#" id="Star1"><img src="./img/Star1.png" alt="Purple_Star"  class="Star" onclick="XiaoModal.open()"></a>
         <img src="./img/Line1.png" alt="" id="Line1" class="Lines">
         <a href="#" id="Star2"><img src="./img/Star2.png" alt="Purple_Star"  class="Star" onclick="HuTaoModal.open()"></a>
@@ -44,10 +55,11 @@
         <a href="#" id="Star4"><img src="./img/Star4.png" alt="Purple_Star"  class="Star" onclick="ThomaModal.open()"></a>
         <img src="./img/Line4.png" alt="" id="Line4" class="Lines">
         <a href="#" id="Star5"><img src="./img/Star5.png" alt="Purple_Star" class="Star" onclick="RaidenModal.open()"></a>
+
     </div>
 
     <div class="ModalOverlay1">
-        <h2 class="Xiao_Title">Xiao</h2>
+        <h1 class="Title">Xiao</h1>
         <a href="#" class="CloseModal" onclick="XiaoModal.close()"></a>
         <div class="Content">
             <p class="Text">Ah, olá Chelly. Não entendo toda essa celebração que os humanos realizam em seus aniversários, mas, honestamente... Estaria feliz em comemorar com ti, por mais egoísta que seja querer te tomar somente para mim em um dia em que todos querem te parabenizar. Enfim, caso precise, basta chamar o meu nome.</p>
@@ -56,7 +68,7 @@
     </div>
 
     <div class="ModalOverlay2">
-        <h2 class="HuTao_Title">Hu Tao</h2>
+        <h1 class="Title">Hu Tao</h1>
         <a href="#" class="CloseModal" onclick="HuTaoModal.close()"></a>
         <div class="Content">
             <p class="Text">É noite da Superlua dos Cervos, as estrelas brilham forte no céu. É uma data especial, afinal, é o seu aniversário, não é mesmo? Acredito que não tenha problema lhe dar um desconto especial permanente nos novos modelos de caixões anti-congelamento.</p>
@@ -65,7 +77,7 @@
     </div>
 
     <div class="ModalOverlay3">
-        <h2 class="Zhongli_Title">Zhongli</h2>
+        <h1 class="Title">Zhongli</h1>
         <a href="#" class="CloseModal" onclick="ZhongliModal.close()"></a>
         <div class="Content">
             <p class="Text">Feliz Aniversário, Chelly. Assim como o pequeno adeptus, estava devidamente ansioso por esta data especial. O povo de Liyue a deve muito, por isso, tenha certeza de aproveitar cada pequena surpresa e presente. Espere, eu acho que eu não deveria ter dito isso...</p>
@@ -74,7 +86,7 @@
     </div>
 
     <div class="ModalOverlay4">
-        <h2 class="Thoma_Title">Thoma</h2>
+        <h1 class="Title">Thoma</h1>
         <a href="#" class="CloseModal" onclick="ThomaModal.close()"></a>
         <div class="Content">
             <p class="Text">Hey, Chelly! Eu não estou atrasado, estou?! Vem comigo! Hm? É óbvio que eu sei que é seu aniversário, por isso chamei um monte dos seus amigos e preparamos comida, bebidas e alguns jogos. Também convenci o anão de cara fechada a vir e... Bem, você vai ver.</p>
@@ -83,7 +95,7 @@
     </div>
 
     <div class="ModalOverlay5">
-        <h2 class="Raiden_Title">Raiden</h2>
+        <h1 class="Title">Raiden</h1>
         <a href="#" class="CloseModal" onclick="RaidenModal.close()"></a>
         <div class="Content">
             <p class="Text">Já faz algum tempo, Chelly. Vim para a parabenizar de forma adequada, mas espero não estar incomodando. Vendo a felicidade de seus amigos em a ver, imagino que você deveria aceitar viver pela eternidade. Hm? Não? Certo...</p>
