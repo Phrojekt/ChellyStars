@@ -73,4 +73,8 @@ const RaidenModal = {
     }
 }
 
-var Music =  document.getElementById('player').autoplay = true
+const Music = {
+    play() {
+        document.getElementById('player').autoplay = true
+    }
+}
