@@ -216,6 +216,17 @@
         width: 256px;
     }
 
+    .VisualIMGThoma {
+        width: 359px;
+        height: 330px;
+        transform: translateY(-15%);
+    }
+
+    .VisualIMGRaiden {
+        width: 359px;
+        height: 290px;
+    }
+
     .CloseModal,
     .CloseModal::before ,
     .CloseModal::after {

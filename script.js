@@ -72,9 +72,3 @@ const RaidenModal = {
             .remove('active')
     }
 }
-
-const Music = {
-    play() {
-        document.getElementById('player').autoplay = true
-    }
-}
