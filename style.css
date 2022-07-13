@@ -53,6 +53,25 @@
         flex-direction: column;
     }
 
+    .o9.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+
+    }
+
+    .ModalInitial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 90%;
+        height: 30%;
+        background-color: #fff;
+
+    }
+
     .Happy {
         position: relative;
         top: 6%;
